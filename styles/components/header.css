@@ -1,0 +1,14 @@
+header .nav__links a {
+    color: var(--black);
+  transition: 0.3s linear;
+}
+header .nav__links a:hover {
+  color: var(--background-dark);
+}
+
+header .nav__icons .nav__icon{
+    background-color: rgba(206, 148, 97, 0.12);
+}
+header .nav__icons .nav__icon.cart__icon{
+    background-color:  var(--brown-main);
+}

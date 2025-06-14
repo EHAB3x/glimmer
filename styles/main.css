@@ -1,0 +1,5 @@
+@import "./colors.css";
+@import "./fonts.css";
+body {
+  font-family: "Harmattan", sans-serif;
+}

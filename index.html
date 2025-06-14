@@ -90,14 +90,13 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-white h-[80px]">
-      <div
-        class="max-w-screen-xl h-full mx-auto flex justify-between items-center"
-      >
-        <div class="flex items-center gap-[22px]">
-          <div
-            class="w-10 h-10 bg-[var(--background-dark)] rounded-full flex items-center justify-center"
-          >
+    <!-- ...existing code... -->
+    <!-- Header -->
+    <header>
+      <div class="header__container">
+        <div class="header__nav-group">
+          <div class="bars__icon">
+            <!-- Hamburger SVG -->
             <svg
               width="22"
               height="15"
@@ -131,37 +130,21 @@
               />
             </svg>
           </div>
-
-          <div class="nav__links flex items-center gap-[23px]">
-            <a href="#" class="flex flex-col items-center active">
-              <span class="text-[var(--background-dark)] text-[24px]"
-                >الرئيسية</span
-              >
-              <span
-                class="w-9 h-[2px] bg-[var(--brown-main)] rounded mt-1"
-              ></span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
-              <span class="opacity-70 text-[20px]">المدونة</span>
-            </a>
-            <a href="#" class="flex flex-col items-center">
-              <span class="opacity-70 text-[20px]">تخفيضات</span>
-            </a>
+          <div class="nav__links">
+            <a class="active" href="#"> الرئيسية </a>
+            <a href="#"> المدونة </a>
+            <a href="#"> تخفيضات </a>
           </div>
         </div>
-
-        <div class="flex flex-col items-center">
+        <div class="header__logo flex flex-col items-center">
           <img
             src="assets/media/images/header/largeLogo.png"
             alt="large-logo"
             loading="lazy"
           />
         </div>
-
-        <div class="nav__icons flex items-center gap-4">
-          <div
-            class="nav__icon w-10 h-10  rounded-full flex items-center justify-center"
-          >
+        <div class="nav__icons">
+          <div class="nav__icon">
             <svg
               width="20"
               height="20"
@@ -185,10 +168,7 @@
               />
             </svg>
           </div>
-
-          <div
-            class="nav__icon w-10 h-10 rounded-full flex items-center justify-center"
-          >
+          <div class="nav__icon hidden sm:flex">
             <svg
               width="20"
               height="20"
@@ -212,10 +192,7 @@
               />
             </svg>
           </div>
-
-          <div
-            class="nav__icon w-10 h-10 rounded-full flex items-center justify-center"
-          >
+          <div class="nav__icon hidden sm:flex">
             <svg
               width="20"
               height="20"
@@ -232,11 +209,8 @@
               />
             </svg>
           </div>
-
-          <div class="relative">
-            <div
-              class="nav__icon cart__icon w-10 h-10 rounded-full flex items-center justify-center"
-            >
+          <div class="relative cart__wrapper">
+            <div class="nav__icon cart__icon">
               <svg
                 width="20"
                 height="20"
@@ -278,13 +252,11 @@
                 />
               </svg>
             </div>
-            <span
-              class="absolute -top-1 -right-1 bg-[var(--background-dark)] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
-              >1</span
-            >
+            <span class="count">1</span>
           </div>
         </div>
       </div>
     </header>
+    <!-- ...existing code... -->
   </body>
 </html>

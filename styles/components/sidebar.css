@@ -1,0 +1,101 @@
+.sidebar__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.sidebar__panel {
+  background: var(--background-dark);
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 0;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 0 24px;
+  gap: 24px;
+}
+.sidebar__header.hide {
+  display: none !important;
+}
+.sidebar__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.sidebar__logo img {
+  aspect-ratio: 4 / 1;
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+.sidebar__menu,
+.sidebar__submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.75rem;
+}
+.sidebar__menu li,
+.sidebar__submenu li {
+  border-bottom: 1px solid #4a5c5b;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.sidebar__menu li a,
+.sidebar__submenu li a,
+.sidebar__submenu-btn,
+.sidebar__back-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.sidebar__menu li a:hover,
+.sidebar__submenu li a:hover,
+.sidebar__submenu-btn:hover {
+  background: #223b39;
+}
+.sidebar__submenu-btn {
+  justify-content: space-between;
+}
+.sidebar__arrow {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.sidebar__back-btn {
+  justify-content: flex-start;
+  width: auto;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.sidebar__submenu-title {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-right: 8px;
+}
+@media (min-width: 640px) {
+  .sidebar__panel {
+    max-width: 400px;
+    border-radius: 0 8px 8px 0;
+  }
+}

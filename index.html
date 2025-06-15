@@ -171,7 +171,7 @@
         </div>
         <div class="header__logo flex flex-col items-center">
           <img
-            src="assets/media/images/header/largeLogo.png"
+            src="assets/media/images/header/largeLogo.svg"
             alt="large-logo"
             loading="lazy"
           />
@@ -290,5 +290,142 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobileSidebar" class="sidebar__overlay" style="display: none">
+      <div class="sidebar__panel">
+        <div class="sidebar__header">
+          <span></span>
+
+          <div class="sidebar__logo">
+            <img
+              src="assets/media/images/header/whitelargeLogo.svg"
+              alt="logo"
+              style="height: 48px"
+            />
+          </div>
+
+          <button
+            class="sidebar__close"
+            id="sidebarCloseBtn"
+            aria-label="إغلاق القائمة"
+          >
+            <!-- X SVG -->
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.16728 14.6553C3.84186 14.9808 3.84191 15.5084 4.16738 15.8338C4.49284 16.1593 5.02048 16.1593 5.34589 15.8338L10.0003 11.1786L14.655 15.8333C14.9804 16.1588 15.5081 16.1588 15.8335 15.8333C16.1589 15.5079 16.1589 14.9803 15.8335 14.6548L11.1787 10L15.8332 5.34468C16.1585 5.01922 16.1585 4.49158 15.833 4.16618C15.5076 3.84076 14.9799 3.84081 14.6545 4.16628L10.0001 8.8215L5.34532 4.16668C5.01989 3.84124 4.49224 3.84124 4.16681 4.16668C3.84137 4.49212 3.84137 5.01975 4.16681 5.34519L8.82175 10.0001L4.16728 14.6553Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="sidebar__menu" id="sidebarMainMenu">
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">المدونة</a></li>
+          <li><a href="#">تخفيضات</a></li>
+          <li><a href="#">العقود</a></li>
+          <li>
+            <button class="sidebar__submenu-btn" data-submenu="ringsMenu">
+              الخواتم
+              <span class="sidebar__arrow">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99997 8C4.99997 8.12787 5.04884 8.25587 5.14647 8.3535L10.1465 13.3535C10.3418 13.5489 10.6582 13.5489 10.8535 13.3535C11.0487 13.1581 11.0488 12.8417 10.8535 12.6465L6.20697 8L10.8535 3.3535C11.0488 3.15812 11.0488 2.84175 10.8535 2.6465C10.6581 2.45125 10.3417 2.45112 10.1465 2.6465L5.14647 7.6465C5.04884 7.74412 4.99997 7.87212 4.99997 8Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </button>
+          </li>
+          <li><a href="#">الأساور</a></li>
+          <li><a href="#">السلاسل</a></li>
+          <li><a href="#">الحلقان</a></li>
+          <li>
+            <button class="sidebar__submenu-btn" data-submenu="engagementMenu">
+              خواتم الخطوبة
+              <span class="sidebar__arrow">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99997 8C4.99997 8.12787 5.04884 8.25587 5.14647 8.3535L10.1465 13.3535C10.3418 13.5489 10.6582 13.5489 10.8535 13.3535C11.0487 13.1581 11.0488 12.8417 10.8535 12.6465L6.20697 8L10.8535 3.3535C11.0488 3.15812 11.0488 2.84175 10.8535 2.6465C10.6581 2.45125 10.3417 2.45112 10.1465 2.6465L5.14647 7.6465C5.04884 7.74412 4.99997 7.87212 4.99997 8Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </button>
+          </li>
+          <li><a href="#">اكسسوارات الشعر</a></li>
+          <li><a href="#">الساعات</a></li>
+        </ul>
+        <!-- Rings submenu -->
+        <ul class="sidebar__submenu" id="ringsMenu" style="display: none">
+          <li>
+            <button class="sidebar__back-btn" data-back="sidebarMainMenu">
+              <svg
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5 8C11.5 8.12787 11.4512 8.25587 11.3535 8.3535L6.35353 13.3535C6.15816 13.5489 5.84178 13.5489 5.64653 13.3535C5.45128 13.1581 5.45116 12.8417 5.64653 12.6465L10.293 8L5.64653 3.3535C5.45116 3.15812 5.45116 2.84175 5.64653 2.6465C5.84191 2.45125 6.15828 2.45112 6.35353 2.6465L11.3535 7.6465C11.4512 7.74412 11.5 7.87212 11.5 8Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <span class="sidebar__submenu-title">الخواتم</span>
+          </li>
+          <li><a href="#">عرض الكل</a></li>
+          <li><a href="#">خواتم فضية</a></li>
+          <li><a href="#">خواتم ذهبية</a></li>
+          <li><a href="#">خواتم الماس</a></li>
+          <li><a href="#">خواتم ملونة</a></li>
+        </ul>
+        <!-- Engagement submenu (example, you can fill as needed) -->
+        <ul class="sidebar__submenu" id="engagementMenu" style="display: none">
+          <li>
+            <button class="sidebar__back-btn" data-back="sidebarMainMenu">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.99997 8C4.99997 8.12787 5.04884 8.25587 5.14647 8.3535L10.1465 13.3535C10.3418 13.5489 10.6582 13.5489 10.8535 13.3535C11.0487 13.1581 11.0488 12.8417 10.8535 12.6465L6.20697 8L10.8535 3.3535C11.0488 3.15812 11.0488 2.84175 10.8535 2.6465C10.6581 2.45125 10.3417 2.45112 10.1465 2.6465L5.14647 7.6465C5.04884 7.74412 4.99997 7.87212 4.99997 8Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <span class="sidebar__submenu-title">خواتم الخطوبة</span>
+          </li>
+          <li><a href="#">عرض الكل</a></li>
+          <li><a href="#">خواتم كلاسيكية</a></li>
+          <li><a href="#">خواتم حديثة</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

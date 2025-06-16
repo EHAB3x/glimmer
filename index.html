@@ -11,7 +11,7 @@
   <body>
     <!-- Top Nav -->
     <nav class="hidden sm:block bg-[var(--brown-main)] text-black py-[6px]">
-      <div class="container mx-auto flex justify-between items-center">
+      <div class="global__container mx-auto flex justify-between items-center">
         <div class="flex items-center gap-[14px]">
           <span class="flex items-center gap-[6px]">
             <svg
@@ -127,7 +127,7 @@
 
     <!-- Header -->
     <header>
-      <div class="header__container container mx-auto">
+      <div class="header__container global__container mx-auto">
         <div class="header__nav-group">
           <div class="bars__icon">
             <svg
@@ -425,7 +425,157 @@
     </div>
 
     <!-- Hero Section -->
-    
+    <section class="hero__section" id="hero">
+      <div
+        class="hero__container global__container mx-auto flex gap-8 pt-[9px]"
+      >
+        <div class="section__image">
+          <img
+            src="assets/media/images/hero/hero.png"
+            alt="hero-image"
+            loading="lazy"
+          />
+          <div class="image__star">
+            <img
+              class="white__star"
+              src="assets/media/svg/hero/white-star.svg"
+              alt="white-star"
+            />
+            <img
+              class="mr-auto mt-1"
+              src="assets/media/svg/hero/brown-star.svg"
+              alt="white-star"
+            />
+          </div>
+        </div>
+
+        <div class="section__content pt-[58px]">
+          <p class="text-[var(--brown-main)] text-[32px] leading-[55px]">
+            تألقي بأناقة لا تُنسى
+          </p>
+
+          <h2
+            class="text-[var(--white)] text-[48px] font-semibold leading-[72px]"
+          >
+            اكـــــتشفي سحــــر
+            <div class="white__background ml-2">
+              <span class="mark__text">المجوهـــــــرات</span>
+              <span class="mark__overlay"></span>
+            </div>
+            التي <br />
+            تعــــكس أنــــوثتك
+          </h2>
+
+          <p class="text-[18px] text-[var(--white)] leading-[29px] mt-[10px]">
+            استمتعي بتجربة تسوق فريدة تضم تشكيلات مذهلة من المجوهرات الراقية،
+            حيث كل قطعة مصممة لتبرز <br />
+            جمالكِ وتضيف لمسة من السحر إلى كل لحظة في حياتكِ
+          </p>
+
+          <button
+            class="explore__more flex items-center justify-between gap-[19px]"
+          >
+            <span class="font-medium text-[22.31px] text-[var(--yellow-light)]"
+              >اكــــتشف المـــزيد</span
+            >
+            <div
+              class="w-[42px] h-[42px] rounded-full bg-[var(--background-base)] flex items-center justify-center"
+            >
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7342 9.48864L12.2109 7.77469L10.5611 2.38038L4.89788 16.4729L19.5466 12.462L14.2651 10.0795L12.7342 9.48864Z"
+                  fill="#1E3231"
+                />
+                <path
+                  d="M7.46 15.4375C7.56 15.4775 7.65 15.4975 7.75 15.4975H8.02C8.43 15.4975 4.5 13.3475 14.5 12.9375C14.5 12.5275 8.43 13.9975 8.02 13.9975H9.56L22.28 1.2775C22.57 0.9875 22.57 0.5075 22.28 0.2175C21.99 -0.0725 21.51 -0.0725 21.22 0.2175L8.5 12.9375V14.4775C8.5 14.0675 8.16 13.7275 7.75 13.7275C7.34 13.7275 7 14.0675 7 14.4775V14.7475C7 14.8475 7.02 14.9375 7.06 15.0375C7.13 15.2175 7.28 15.3675 7.46 15.4375Z"
+                  fill="#1E3231"
+                />
+              </svg>
+            </div>
+          </button>
+
+          <div class="indicators flex items-center mt-[50px]">
+            <div class="right__indicator">
+              <svg
+                width="50"
+                height="10"
+                viewBox="0 0 50 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.2" clip-path="url(#clip0_2_1709)">
+                  <path
+                    d="M-35.0873 5.68483H40.2368L38.5189 9.72801L50.0481 4.864L38.5189 0L40.2368 4.04317H-35.0873C-35.4613 2.39331 -36.9353 1.16089 -38.6977 1.16089C-40.744 1.15972 -42.402 2.81896 -42.402 4.864C-42.402 6.90904 -40.744 8.56712 -38.6989 8.56712C-36.9365 8.56712 -35.4613 7.3347 -35.0884 5.68483H-35.0873Z"
+                    fill="#FFF5E0"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2_1709">
+                    <rect width="50" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            <span
+              class="mr-[4.5px] ml-[13.5px] font-medium text-[26px] text-[var(--white)] leading-[72px]"
+              >3 / 1</span
+            >
+
+            <div class="left__indicator">
+              <svg
+                width="53"
+                height="10"
+                viewBox="0 0 53 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M85.0873 5.68483H9.7632L11.4811 9.72801L-0.0480652 4.864L11.4811 0L9.7632 4.04317H85.0873C85.4613 2.39331 86.9353 1.16089 88.6977 1.16089C90.744 1.15972 92.402 2.81896 92.402 4.864C92.402 6.90904 90.744 8.56712 88.6989 8.56712C86.9365 8.56712 85.4613 7.3347 85.0884 5.68483H85.0873Z"
+                  fill="#FFF5E0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="float__img bottom__img">
+          <img
+            src="assets/media/images/hero/float-bottom.png"
+            alt="float-bottom"
+            loading="lazy"
+          />
+        </div>
+        <div class="float__img top__img">
+          <img
+            src="assets/media/images/hero/float-top.png"
+            alt="float-bottom"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="float__flower bottom__flower">
+        <img
+          src="assets/media/images/hero/flower__bottom.png"
+          alt="flower"
+          loading="lazy"
+        />
+      </div>
+      <div class="float__flower top__flower">
+        <img
+          src="assets/media/images/hero/flower__top.png"
+          alt="flower"
+          loading="lazy"
+        />
+      </div>
+    </section>
     <script src="scripts/main.js"></script>
   </body>
 </html>

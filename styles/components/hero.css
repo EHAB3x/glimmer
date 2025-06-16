@@ -1,0 +1,118 @@
+.hero__section {
+  padding: 38px 0 27px 0;
+  background-color: var(--background-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__section .float__flower {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__section .float__flower.bottom__flower {
+  left: 0;
+  bottom: 0;
+  opacity: 40%;
+}
+
+.hero__section .float__flower.top__flower {
+  opacity: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.hero__section .hero__container {
+  position: relative;
+  padding-bottom: 30px;
+}
+.hero__section .hero__container .float__img {
+  position: absolute;
+  z-index: 3;
+}
+.hero__section .hero__container .float__img.bottom__img {
+  bottom: 30px;
+  left: 0;
+}
+.hero__section .hero__container .float__img.top__img {
+  top: 3px;
+  left: 80px;
+}
+
+.hero__section .section__image {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.hero__section .section__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid var(--off-white);
+  right: -16px;
+  top: -11px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+}
+.hero__section .section__image img {
+  position: relative;
+}
+.hero__section .image__star {
+  position: absolute;
+  width: 787px;
+  right: 90px;
+  top: 0;
+}
+
+.hero__section .image__star .white__star {
+  animation: scale 6s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero__section .section__content .white__background {
+  position: relative;
+  color: var(--background-dark);
+  width: fit-content;
+  display: inline-block;
+}
+.hero__section .section__content .white__background .mark__text {
+  position: relative;
+  z-index: 9;
+}
+.hero__section .section__content .mark__overlay {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  background-color: var(--background-base);
+  left: 0;
+  top: 18px;
+}
+
+.hero__section .section__content .explore__more {
+  padding: 7px 16px 7px 8px;
+  border: 1px solid var(--background-base);
+  border-radius: 41px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.hero__section .section__content .explore__more:hover svg {
+  transform: rotate(180deg);
+}
+
+.hero__section .section__content .explore__more svg {
+  transition: 0.3s linear;
+}

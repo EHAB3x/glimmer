@@ -8,3 +8,8 @@
 body {
   font-family: "Harmattan", sans-serif;
 }
+
+
+.global__container{
+  max-width: 1200px;
+}

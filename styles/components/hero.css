@@ -27,6 +27,32 @@
   position: relative;
   padding-bottom: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero__section {
+    padding: 0;
+  }
+  .hero__section .hero__container {
+    padding-top: 17px;
+    padding-bottom: 24px;
+    margin-top: 17px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero__section .float__flower.bottom__flower {
+    left: -24px;
+    bottom: 0;
+    width: 175px;
+    height: 219px;
+  }
+  .hero__section .float__flower.top__flower {
+    top: 20px;
+    right: -60px;
+    opacity: 40%;
+    transform: unset;
+  }
+}
 .hero__section .hero__container .float__img {
   position: absolute;
   z-index: 3;
@@ -38,6 +64,22 @@
 .hero__section .hero__container .float__img.top__img {
   top: 3px;
   left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__section .hero__container .float__img.bottom__img {
+    bottom: 86px;
+    left: 24px;
+    width: 72px;
+    height: 77px;
+  }
+  .hero__section .hero__container .float__img.top__img {
+    width: 58px;
+    height: 50px;
+    top: unset;
+    bottom: 88px;
+    left: 112px;
+  }
 }
 
 .hero__section .section__image {
@@ -68,6 +110,40 @@
 
 .hero__section .image__star .white__star {
   animation: scale 6s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__section .section__image {
+    width: 100%;
+    height: unset;
+    position: relative;
+    padding: 0 22px;
+  }
+  .hero__section .section__image::before {
+    width: calc(100% - 44px);
+    right: 8px;
+    top: -12px;
+  }
+  .hero__section .section__image img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
+  .hero__section .image__star {
+    position: absolute;
+    width: fit-content;
+    right: unset;
+    left: 30px;
+    top: 0;
+  }
+
+  .hero__section .image__star .white__star {
+    display: none;
+  }
+  .hero__section .image__star .brown__star {
+    width: 21.27px;
+    height: 19.27px;
+    margin: 0;
+  }
 }
 
 @keyframes scale {
@@ -115,4 +191,56 @@
 
 .hero__section .section__content .explore__more svg {
   transition: 0.3s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__section .section__content {
+    padding: 0;
+  }
+  .hero__section .section__content .hide__line {
+    display: none;
+  }
+  .hero__section .section__content p:first-child {
+    font-size: 1.25rem;
+  }
+  .hero__section .section__content h2:nth-child(2) {
+    font-size: 28px;
+    line-height: 52px;
+  }
+  .hero__section .section__content .mark__overlay {
+    height: 30px;
+    top: 13px;
+  }
+  .hero__section .section__content p:nth-child(3) {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 3px;
+  }
+  .hero__section .section__content .explore__more {
+    padding: 4px 9px 6.25px 4.5px;
+    border-radius: 23.43px;
+    margin-top: 71px;
+  }
+  .hero__section .section__content .explore__more span:first-child {
+    font-size: 12.75px;
+    line-height: 35.3px;
+  }
+  .hero__section .section__content .explore__more div:nth-child(2) {
+    width: 24px;
+    height: 24px;
+  }
+  .hero__section .section__content .explore__more div:nth-child(2) svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .indicators {
+    margin-top: 11.7px;
+  }
+  .indicators span:nth-child(2){
+    font-size: 20px;
+    line-height: 55.5px;
+  }
 }

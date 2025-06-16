@@ -13,3 +13,11 @@ body {
 .global__container{
   max-width: 1200px;
 }
+
+@media screen and (max-width: 768px) {
+  .global__container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+}

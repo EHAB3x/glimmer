@@ -6,10 +6,6 @@
   opacity: 24%;
 }
 
-.product__section .section__header h2{
-    font-size: 24px;
-    
-}
 .product__section .products__container .product__card {
   padding: 10px;
   background-color: var(--background-card);

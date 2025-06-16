@@ -25,10 +25,7 @@ header {
 }
 
 .header__container {
-  max-width: 1280px;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   .latest__fashion {
     flex-direction: column;
-    padding-right: 0;
+    padding: 0;
     gap: 1rem;
   }
 

@@ -20,7 +20,7 @@
   top: 0;
   right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .categories__Container {
     padding: 0;
   }
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .new__categories .section__header p {
     font-size: 20px;
     line-height: 24px;
@@ -96,7 +96,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .new__categories .section__content .images__container {
     overflow-x: scroll;
     &::-webkit-scrollbar {

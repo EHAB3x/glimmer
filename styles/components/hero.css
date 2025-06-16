@@ -28,7 +28,7 @@
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .hero__section {
     padding: 0;
   }
@@ -66,7 +66,7 @@
   left: 80px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .hero__section .hero__container .float__img.bottom__img {
     bottom: 86px;
     left: 24px;
@@ -112,7 +112,7 @@
   animation: scale 6s linear infinite;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .hero__section .section__image {
     width: 100%;
     height: unset;
@@ -193,7 +193,7 @@
   transition: 0.3s linear;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .hero__section .section__content {
     padding: 0;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .indicators {
     margin-top: 11.7px;
   }

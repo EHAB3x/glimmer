@@ -5,7 +5,7 @@
   border-bottom: 1px solid var(--brown-main);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .tools__used {
     padding-top: 24px;
     padding-bottom: 40px;

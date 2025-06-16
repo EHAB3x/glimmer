@@ -3,7 +3,7 @@
   padding-top: 50px;
   padding-bottom: 54px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .testimonials__section {
     padding-top: 0;
     padding-bottom: 0;
@@ -17,7 +17,7 @@
 .testimonials__section .testimonial__image {
   flex: 486px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .testimonials__section .testimonial__image {
     flex: unset;
     img {
@@ -50,7 +50,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .testimonials__section .testimonial__content .testimonial__header {
     position: absolute;
     width: calc(100% - 32px);

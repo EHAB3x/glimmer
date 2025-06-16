@@ -125,7 +125,7 @@
     top: -12px;
   }
   .hero__section .section__image img {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.25;
     width: 100%;
   }
   .hero__section .image__star {

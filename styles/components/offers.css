@@ -1,0 +1,65 @@
+.offers__section {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  background-color: var(--background-secondary);
+}
+
+.offers__section .best__offer {
+  flex: 475px 0 0;
+}
+
+.offers__section .best__offer .offer__details .offer__card {
+  padding: 10px;
+  background-color: var(--background-card);
+  border-radius: 0.75rem;
+  max-width: 300px;
+}
+.offers__section .best__offer .offer__details .offer__card .product__image {
+  aspect-ratio: 1;
+}
+
+.offers__section .offer__time {
+  width: 100%;
+  background-image: url("../../assets/media/images/offers/cover.png");
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  padding-bottom: 40px;
+}
+
+.offers__section .offer__deadline .time__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+}
+.offers__section .offer__deadline .time__item .time__number {
+  width: 81px;
+  height: 84px;
+  border-radius: 3px;
+  background-color: #ffffff26;
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35.38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers__section .offer__deadline .time__item::after {
+  content: url("../../assets/media/svg/offers/divider.svg");
+  position: absolute;
+  top: 28px;
+  right: -26px;
+}
+.offers__section .offer__deadline .time__item:first-child::after {
+  content: "";
+}
+
+.offers__section .offer__deadline .time__item .time__label {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35.38px;
+  text-align: center;
+}

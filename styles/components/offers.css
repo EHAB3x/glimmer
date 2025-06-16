@@ -1,6 +1,36 @@
 .offers__section {
   font-family: "Baloo Bhaijaan 2", sans-serif;
   background-color: var(--background-secondary);
+    position: relative;
+}
+
+.offers__section .float__shape{
+    position: absolute;
+    z-index: 1;
+}
+
+.offers__section .float__shape.top__right{
+    top: 0;
+    right: 0;
+}
+.offers__section .float__shape.bottom__right{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.offers__section .float__shape.top__left{
+    top: 0;
+    left: 0;
+}
+.offers__section .float__shape.bottom__left{
+    bottom: 0;
+    left: 0;
+}
+
+
+.offers__section .offers__container{
+    position: relative;
+    z-index: 9;
 }
 
 .offers__section .best__offer {

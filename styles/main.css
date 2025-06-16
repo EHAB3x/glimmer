@@ -10,6 +10,7 @@
 @import "components/latest-fashion.css";
 @import "components/banners.css";
 @import "components/tools-used.css";
+@import "components/stats.css";
 
 body {
   font-family: "Harmattan", sans-serif;

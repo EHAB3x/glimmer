@@ -5,6 +5,10 @@
   background-color: var(--background-dark);
 }
 
+.categories__Container {
+  padding: 0 39px;
+}
+
 .new__categories .float__flower {
   position: absolute;
 }
@@ -17,6 +21,9 @@
   right: 0;
 }
 @media screen and (max-width: 768px) {
+  .categories__Container {
+    padding: 0;
+  }
   .new__categories .float__flower.bottom__flower {
     bottom: 0;
     left: 0;

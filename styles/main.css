@@ -11,6 +11,7 @@
 @import "components/banners.css";
 @import "components/tools-used.css";
 @import "components/stats.css";
+@import "components/footer.css";
 
 body {
   font-family: "Harmattan", sans-serif;

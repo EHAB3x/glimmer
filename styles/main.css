@@ -8,6 +8,7 @@
 @import "components/new-categories.css";
 @import "components/clients-rate.css";
 @import "components/latest-fashion.css";
+@import "components/banners.css";
 
 body {
   font-family: "Harmattan", sans-serif;

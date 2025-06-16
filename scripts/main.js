@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-  // Offers Section Functionality
   const indicators = document.querySelectorAll(".offers__section .indicator");
   const offerCard = document.querySelector(".offers__section .offer__card");
   const offerTime = document.querySelector(".offers__section .offer__time");
@@ -77,13 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         indicators[indicators.length - 1].classList.remove("disabled");
       }
-      
+
       offerTime.classList.add("fade-out");
       offerCard.classList.add("fade-out");
 
       setTimeout(() => {
         offerTime.style.backgroundImage = `url(${images[index].backgroundImage})`;
-
         const productImage = offerCard.querySelector(".product__image img");
         productImage.src = images[index].cardImage;
 
@@ -91,6 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
         offerTime.classList.add("fade-in");
         offerCard.classList.remove("fade-out");
         offerCard.classList.add("fade-in");
+
+        setTimeout(() => {
+          offerTime.classList.remove("fade-in");
+          offerCard.classList.remove("fade-in");
+        }, 300);
       }, 300);
 
       indicators.forEach((ind) => ind.classList.remove("active"));

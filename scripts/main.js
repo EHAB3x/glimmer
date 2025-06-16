@@ -110,3 +110,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+window.addEventListener("load", () => {
+  if (window.innerWidth <= 768) {
+    const container = document.getElementById("categoryScroll");
+    const cards = container.querySelectorAll(".category__card");
+
+    if (cards.length >= 3) {
+      const middleCard = cards[2];
+      const cardOffsetLeft = middleCard.offsetLeft;
+      const cardWidth = middleCard.offsetWidth;
+      const containerWidth = container.offsetWidth;
+
+      const scrollTo = cardOffsetLeft - containerWidth / 2 + cardWidth / 2;
+      container.scrollLeft = scrollTo;
+    }
+  }
+});

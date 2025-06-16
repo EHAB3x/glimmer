@@ -10,11 +10,25 @@
 }
 .new__categories .float__flower.bottom__flower {
   bottom: 0;
-  left: 0;
+  left: 150px;
 }
 .new__categories .float__flower.top__flower {
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .new__categories .float__flower.bottom__flower {
+    bottom: 0;
+    left: 0;
+  }
+  .new__categories .float__flower.bottom__flower img {
+    width: 174px;
+    height: 179px;
+  }
+  .new__categories .float__flower.top__flower img {
+    width: 170px;
+    height: 330px;
+  }
 }
 
 @media screen and (max-width: 768px) {

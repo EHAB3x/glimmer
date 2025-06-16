@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+  .latest__fashion {
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .latest__fashion .section__header {
+    padding-right: 39px;
+    margin-top: 30px;
+    max-width: unset;
+  }
+  .latest__fashion .section__header p {
+    font-size: 20px;
+  }
+  .latest__fashion .section__header h2 {
+    font-size: 29px;
+    line-height: 35px;
+  }
+}
+
+.latest__fashion .article__container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brown-dark);
+  }
+}
+.latest__fashion .article__container .article__card .card__image img {
+  max-width: 316px;
+  border-radius: 0.75rem;
+  transition: 0.3s linear;
+  aspect-ratio: 1.38 / 1;
+}
+.latest__fashion .article__container .article__card:hover .card__image img {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+@media screen and (max-width: 768px) {
+  .latest__fashion .article__container {
+    gap: 21px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .latest__fashion .article__container .article__card {
+    max-width: unset;
+    width: 250px;
+  }
+
+  .latest__fashion .article__container .article__card .card__image img {
+    max-width: 250px;
+    aspect-ratio: 1.38 / 1;
+  }
+  .latest__fashion .article__container .article__card .card__header {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .latest__fashion .article__container .article__card .card__info h3 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .latest__fashion .article__container .article__card .card__info p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .latest__fashion .article__container .article__card .card__info a {
+    font-size: 17px;
+  }
+}

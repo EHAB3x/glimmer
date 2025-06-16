@@ -1,0 +1,128 @@
+.new__categories {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 31px;
+  background-color: var(--background-dark);
+}
+
+.new__categories .float__flower {
+  position: absolute;
+}
+.new__categories .float__flower.bottom__flower {
+  bottom: 0;
+  left: 0;
+}
+.new__categories .float__flower.top__flower {
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .new__categories .section__header p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .new__categories .section__header h3 {
+    font-size: 28px;
+  }
+}
+
+.new__categories .section__content {
+  position: relative;
+  z-index: 3;
+}
+.new__categories .section__content .images__container .category__card {
+  position: relative;
+  height: fit-content;
+}
+.new__categories
+  .section__content
+  .images__container
+  .category__card
+  .category__text {
+  position: absolute;
+  width: 100%;
+  bottom: 14px;
+  text-align: center;
+}
+
+.new__categories
+  .section__content
+  .images__container
+  .category__card
+  .category__text
+  h3 {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+
+  span {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+.new__categories
+  .section__content
+  .images__container
+  .category__card
+  .category__text
+  a {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .new__categories .section__content .images__container {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .new__categories
+    .section__content
+    .images__container
+    .category__card
+    .category__text
+    h3 {
+    font-size: 23px;
+    line-height: 30px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+  .new__categories
+    .section__content
+    .images__container
+    .category__card
+    .category__text
+    a {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .new__categories .section__content .images__container .category__card {
+    margin-top: 64px;
+    flex: 175px 0 0;
+  }
+  .new__categories
+    .section__content
+    .images__container
+    .category__card:nth-child(3) {
+    flex: 250px 0 0;
+    margin-top: 20px;
+  }
+}
+
+.indicators .indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

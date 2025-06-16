@@ -1,36 +1,70 @@
 .offers__section {
   font-family: "Baloo Bhaijaan 2", sans-serif;
   background-color: var(--background-secondary);
-    position: relative;
+  position: relative;
+  overflow: hidden;
 }
 
-.offers__section .float__shape{
-    position: absolute;
-    z-index: 1;
+.offers__section .float__shape {
+  position: absolute;
+  z-index: 1;
 }
 
-.offers__section .float__shape.top__right{
-    top: 0;
+.offers__section .float__shape.top__right {
+  top: 0;
+  right: 0;
+}
+.offers__section .float__shape.bottom__right {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.offers__section .float__shape.top__left {
+  top: 0;
+  left: 0;
+}
+.offers__section .float__shape.bottom__left {
+  bottom: 0;
+  left: 0;
+}
+
+.offers__section .offers__container {
+  position: relative;
+  z-index: 9;
+}
+
+@media screen and (max-width: 768px) {
+  .offers__section {
+    padding: 32px 0 54px 0;
+  }
+  .offers__section .offers__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .offers__section .float__shape.top__right {
+    width: 226px;
+    height: 127px;
+    top: -33px;
+    right: -0;
+  }
+  .offers__section .float__shape.bottom__right {
+    width: 463.5px;
+    height: 448px;
+    top: 325px;
     right: 0;
-}
-.offers__section .float__shape.bottom__right{
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-}
-.offers__section .float__shape.top__left{
-    top: 0;
-    left: 0;
-}
-.offers__section .float__shape.bottom__left{
-    bottom: 0;
-    left: 0;
-}
-
-
-.offers__section .offers__container{
-    position: relative;
-    z-index: 9;
+  }
+  .offers__section .float__shape.top__left {
+    width: 180px;
+    height: 90px;
+    top: -41px;
+    left: -71px;
+  }
+  .offers__section .float__shape.bottom__left {
+    width: 437px;
+    height: 422.4px;
+    bottom: -134px;
+    left: -194px;
+  }
 }
 
 .offers__section .best__offer {
@@ -43,8 +77,65 @@
   border-radius: 0.75rem;
   max-width: 300px;
 }
-.offers__section .best__offer .offer__details .offer__card .product__image {
+.offers__section .best__offer .offer__details .offer__card .product__image img {
   aspect-ratio: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .offers__section .best__offer {
+    flex: unset;
+  }
+  .offers__section .best__offer h3 {
+    font-size: 32px;
+  }
+  .offers__section .best__offer p:nth-child(2) {
+    font-size: 20px;
+  }
+  .offers__section .best__offer .offer__details {
+    margin-top: 28px;
+    gap: 37px;
+  }
+  .offers__section .best__offer .indicator {
+    width: 24px;
+    height: 24px;
+  }
+  .offers__section
+    .best__offer
+    .offer__details
+    .offer__card
+    .product__details
+    .product__header
+    p {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .offers__section
+    .best__offer
+    .offer__details
+    .offer__card
+    .product__details
+    h3 {
+    font-size: 20px;
+  }
+  .offers__section
+    .best__offer
+    .offer__details
+    .offer__card
+    .product__details
+    .prices
+    p {
+    font-size: 16px;
+  }
+  .offers__section
+    .best__offer
+    .offer__details
+    .offer__card
+    .product__details
+    .prices
+    del {
+    font-size: 14px;
+  }
 }
 
 .offers__section .offer__time {
@@ -92,4 +183,37 @@
   font-size: 20px;
   line-height: 35.38px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .offers__section .offer__time {
+    min-height: 310px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size: cover;
+  }
+  .offers__section .offer__deadline .time__item {
+    gap: 2px;
+  }
+  .offers__section .offer__deadline .time__item .time__number {
+    width: 41px;
+    height: 42px;
+    border-radius: 1.5px;
+    backdrop-filter: blur(5px);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .offers__section .offer__deadline .time__item::after {
+    content: url("../../assets/media/svg/offers/small-divider.svg");
+    top: 14px;
+  }
+  .offers__section .offer__deadline .time__item .time__label {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
 }

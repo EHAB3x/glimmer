@@ -100,4 +100,13 @@ document.addEventListener("DOMContentLoaded", function () {
       indicator.classList.add("active");
     });
   });
+
+  // Heart icon toggle
+  const heartIcons = document.querySelectorAll(".heart__icon");
+
+  heartIcons.forEach((icon) => {
+    icon.addEventListener("click", function () {
+      icon.classList.toggle("active");
+    });
+  });
 });

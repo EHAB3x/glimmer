@@ -4,10 +4,12 @@
 @import "components/sidebar.css";
 @import "components/hero.css";
 @import "components/offers.css";
+@import "components/new-products.css";
 
 
 body {
   font-family: "Harmattan", sans-serif;
+  background-color: var(--off-white);
 }
 
 

@@ -1,0 +1,129 @@
+.testimonials__section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 54px;
+}
+@media screen and (max-width: 768px) {
+  .testimonials__section {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 134px;
+  }
+  .testimonials__section .testimonials__container {
+    flex-direction: column;
+  }
+}
+
+.testimonials__section .testimonial__image {
+  flex: 486px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .testimonials__section .testimonial__image {
+    flex: unset;
+    img {
+      aspect-ratio: 0.7 / 1;
+    }
+  }
+}
+
+.testimonials__section .testimonial__content .testimonial__timeline {
+  font-family: "Lateef", serif;
+  margin-top: 24px;
+  width: fit-content;
+}
+.testimonials__section
+  .testimonial__content
+  .testimonial__timeline
+  .timeline__steps
+  span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--brown-dark);
+  opacity: 30%;
+}
+.testimonials__section
+  .testimonial__content
+  .testimonial__timeline
+  .timeline__steps
+  span.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials__section .testimonial__content .testimonial__header {
+    position: absolute;
+    width: calc(100% - 32px);
+    top: 0;
+    right: 16px;
+  }
+  .testimonials__section .testimonial__content .testimonial__header p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .testimonials__section .testimonial__content .testimonial__header h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .testimonials__section .testimonial__content .testimonial__text {
+    margin-right: 0;
+    margin-top: 16px;
+    padding: 22px 21px 21px 13px;
+  }
+  .testimonials__section
+    .testimonial__content
+    .testimonial__text
+    .quote__shape {
+    width: 28px;
+    height: 28px;
+  }
+  .testimonials__section .testimonial__content .testimonial__text p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .testimonials__section
+    .testimonial__content
+    .testimonial__text
+    .quote__shape.bottom__quote {
+    margin-left: 34px;
+  }
+  .testimonials__section
+    .testimonial__content
+    .testimonial__text
+    .quote__user
+    .user__image
+    img {
+    width: 56px;
+    height: 56px;
+  }
+  .testimonials__section
+    .testimonial__content
+    .testimonial__text
+    .quote__user
+    .user__details
+    p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .testimonials__section
+    .testimonial__content
+    .testimonial__text
+    .quote__user
+    .user__details
+    span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .testimonials__section .testimonial__content .testimonial__timeline,
+  .testimonials__section
+    .testimonial__content
+    .testimonial__timeline
+    .timeline__steps,
+  .testimonials__section
+    .testimonial__content
+    .testimonial__timeline
+    .timeline__steps
+    span {
+    width: 100%;
+  }
+}

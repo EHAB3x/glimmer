@@ -5,15 +5,14 @@
 @import "components/hero.css";
 @import "components/offers.css";
 @import "components/new-products.css";
-
+@import "components/new-categories.css";
 
 body {
   font-family: "Harmattan", sans-serif;
   background-color: var(--off-white);
 }
 
-
-.global__container{
+.global__container {
   max-width: 1200px;
 }
 
@@ -22,5 +21,4 @@ body {
     width: 100%;
     padding: 0 1rem;
   }
-  
 }

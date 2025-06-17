@@ -58,7 +58,7 @@ header {
 }
 
 .header__logo img {
-  aspect-ratio: 4 / 1;
+  aspect-ratio: auto;
 }
 
 @media (max-width: 640px) {

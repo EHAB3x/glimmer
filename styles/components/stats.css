@@ -112,24 +112,23 @@
   }
 }
 .stats__section .model__image {
-  margin-top: -104px;
+  margin-top: -70px;
   position: relative;
   z-index: 4;
 }
 .stats__section .model__image img {
-  aspect-ratio: 1;
+  aspect-ratio: auto;
   width: 341px;
-  padding: 1.5rem;
 }
 
 @media screen and (max-width: 1023px) {
   .stats__section .model__image {
-    margin-top: -110px;
+    margin-top: -104px;
   }
 
   .stats__section .model__image img {
     width: 297px;
-    padding: 0.5rem;
+    height: 297px;
     margin: 0 auto;
   }
 }

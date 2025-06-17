@@ -31,10 +31,12 @@
   }
 }
 .latest__fashion .article__container .article__card .card__image img {
-  max-width: 316px;
+  min-width: 316px;
+  width: 316px;
+  height: 228px;
   border-radius: 0.75rem;
   transition: 0.3s linear;
-  aspect-ratio: 1.38 / 1;
+  aspect-ratio: auto;
 }
 .latest__fashion .article__container .article__card:hover .card__image img {
   border-top-left-radius: 100%;
@@ -53,8 +55,10 @@
   }
 
   .latest__fashion .article__container .article__card .card__image img {
-    max-width: 250px;
-    aspect-ratio: 1.38 / 1;
+    min-width: 250px;
+    width: 250px;
+    height: 180px;
+    aspect-ratio: auto;
   }
   .latest__fashion .article__container .article__card .card__header {
     font-size: 14px;

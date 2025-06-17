@@ -14,10 +14,6 @@
     padding-top: 24px;
     padding-bottom: 40px;
   }
-  .tools__used .tools__container {
-    flex-direction: column;
-    gap: 60px;
-  }
   .tools__used .tools__details {
     flex: unset;
   }
@@ -38,5 +34,11 @@
     font-size: 18px;
     line-height: 30.8px;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tools__used .tools__container {
+    flex-direction: column;
+    gap: 60px;
   }
 }

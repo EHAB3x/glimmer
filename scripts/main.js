@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const images = [
     {
-      cardImage: "assets/media/images/offers/product1.png",
-      backgroundImage: "assets/media/images/offers/cover1.png",
-    },
-    {
       cardImage: "assets/media/images/offers/product2.png",
       backgroundImage: "assets/media/images/offers/cover2.jpg",
+    },
+    {
+      cardImage: "assets/media/images/offers/product1.png",
+      backgroundImage: "assets/media/images/offers/cover1.png",
     },
   ];
 

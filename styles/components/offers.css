@@ -38,7 +38,6 @@
     padding: 32px 0 54px 0;
   }
   .offers__section .offers__container {
-    flex-direction: column;
     gap: 25px;
   }
   .offers__section .float__shape.top__right {
@@ -67,6 +66,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .offers__section .offers__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
 .offers__section .best__offer {
   flex: 475px 0 0;
 }
@@ -78,7 +84,7 @@
   max-width: 300px;
 }
 .offers__section .best__offer .offer__details .offer__card .product__image img {
-  aspect-ratio: auto;
+  aspect-ratio: 0.94;
   width: 100%;
 }
 

@@ -9,6 +9,8 @@
     padding-bottom: 0;
     padding-top: 134px;
   }
+}
+@media screen and (max-width: 768px) {
   .testimonials__section .testimonials__container {
     flex-direction: column;
   }
@@ -21,6 +23,7 @@
 }
 @media screen and (max-width: 1023px) {
   .testimonials__section .testimonial__image {
+    width: 100%;
     flex: unset;
     img {
       aspect-ratio: auto;
@@ -53,6 +56,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .testimonials__section .testimonial__content {
+    width: 100%;
+  }
   .testimonials__section .testimonial__content .testimonial__header {
     position: absolute;
     width: calc(100% - 32px);

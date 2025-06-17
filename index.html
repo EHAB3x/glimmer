@@ -6,13 +6,12 @@
     <meta name="description" content="Where you can find all you want">
     <title>Glimmer</title>
     <link rel="icon" href="assets/media/svg/logo.svg" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="preload" href="lcp-image.jpg" as="image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/main.css" as="style" fetch-priority="high"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" fetch-priority="high">
   </head>
   <body>
     <!-- Top Nav -->
-    <nav class="hidden sm:block bg-[var(--brown-main)] text-black py-[6px]">
+    <nav class="bg-[var(--brown-main)] text-black py-[6px]">
       <div class="global__container mx-auto flex justify-between items-center">
         <div class="flex items-center gap-[14px]">
           <span class="flex items-center gap-[6px]">
@@ -441,7 +440,6 @@
             height=""
             src="assets/media/images/hero/hero.png"
             alt="hero-image"
-            loading="lazy"
           />
           <div class="image__star">
             <img
@@ -2576,7 +2574,6 @@
             </p>
           </div>
 
-          <!-- Links -->
           <div class="footer__links flex flex-row justify-between gap-[34px]">
             <div class="links__col">
               <h2 class="col__header">حسابي</h2>

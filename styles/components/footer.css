@@ -31,6 +31,14 @@ footer .footer__links .links__col .part__links li a {
     flex-direction: column;
     gap: 18px;
   }
+
+  footer .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
   footer .links__container .footer__image img {
     width: 181px;
     height: 48px;
@@ -69,7 +77,6 @@ footer .footer__links .links__col .part__links li a {
   footer .newsletter {
     border-radius: 12px;
     padding: 16px 15px 15px 16px;
-    flex-direction: column;
     gap: 10px;
   }
   footer .newsletter .newsletter__header img {

@@ -128,7 +128,7 @@ footer .footer__links .links__col .part__links li a {
     text-align: center;
   }
   footer .bottom__nav .global__container .payment__methods img{
-    aspect-ratio: 2 / 1;
+    aspect-ratio: auto;
     width: 40px;
 }
 }

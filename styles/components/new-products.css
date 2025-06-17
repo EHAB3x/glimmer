@@ -60,7 +60,7 @@
   transform: scale(1.05);
 }
 .product__section .products__container .product__card .product__image img {
-  aspect-ratio: 1;
+  aspect-ratio: auto;
   width: 100%;
 }
 .product__section

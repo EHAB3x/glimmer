@@ -125,7 +125,7 @@
     top: -12px;
   }
   .hero__section .section__image img {
-    aspect-ratio: 1 / 1.25;
+    aspect-ratio: auto;
     width: 100%;
   }
   .hero__section .image__star {
@@ -195,6 +195,7 @@
 
 @media screen and (max-width: 1023px) {
   .hero__section .section__content {
+    width: 100%;
     padding: 0;
   }
   .hero__section .section__content .hide__line {

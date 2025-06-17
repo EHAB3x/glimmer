@@ -78,7 +78,7 @@
   max-width: 300px;
 }
 .offers__section .best__offer .offer__details .offer__card .product__image img {
-  aspect-ratio: 1;
+  aspect-ratio: auto;
   width: 100%;
 }
 

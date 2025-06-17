@@ -16,12 +16,14 @@
 
 .testimonials__section .testimonial__image {
   flex: 486px 0 0;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 1023px) {
   .testimonials__section .testimonial__image {
     flex: unset;
     img {
-      aspect-ratio: 0.7 / 1;
+      aspect-ratio: auto;
     }
   }
 }

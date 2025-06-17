@@ -4,6 +4,10 @@
 .tools__used .tools__details .detail__card {
   border-bottom: 1px solid var(--brown-main);
 }
+.tools__used .tools__image{
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1023px) {
   .tools__used {

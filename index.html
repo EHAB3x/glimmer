@@ -2363,8 +2363,10 @@
 
     <footer class="bg-[var(--background-dark)] text-[var(--white)] pt-[49px]">
       <div class="global__container mx-auto">
-        <div class="flex flex-row justify-between items-center gap-[110px]">
-          <div>
+        <div
+          class="links__container flex flex-row justify-between items-center gap-[110px]"
+        >
+          <div class="footer__image">
             <img
               width="280"
               height="74"
@@ -2477,7 +2479,7 @@
                   </a>
                 </li>
               </ul>
-              <div class="flex gap-[9px] mt-6">
+              <div class="social__links flex gap-[9px] mt-6">
                 <a
                   href="#"
                   class="w-[40px] h-[40px] bg-[var(--background-base)] rounded-full flex justify-center items-center"
@@ -2581,14 +2583,30 @@
         </div>
 
         <!-- Newsletter Section -->
-        <div class="bg-[var(--background-secondary)] text-white rounded-[24px] pt-[27px] pr-[40px] pb-[26px] mt-8 flex gap-[99px]">
-          <div class="flex flex-col gap-[5px]">
-            <h2 class="font-bold text-[24px] text-[var(--black)] leading-[30px] opacity-90">
-              اشترك في النشرة البريدية ليصلك كل جديد!
-            </h2>
-            <p class="text-[20px] text-[var(--black)] leading-[30px] opacity-90">اشترك في النشرة البريدية ليصلك كل جديد!</p>
+        <div
+          class="newsletter bg-[var(--background-secondary)] text-white rounded-[24px] pt-[27px] pr-[40px] pb-[26px] mt-8 flex gap-[99px]"
+        >
+          <div class="newsletter__header flex gap-2">
+            <img
+              src="assets/media/svg/footer/clients-platform.svg"
+              alt="clients-platform"
+              loading="lazy"
+              class="hidden"
+            />
+            <div class="flex flex-col gap-[5px]">
+              <h2
+                class="font-bold text-[24px] text-[var(--black)] leading-[30px] opacity-90"
+              >
+                اشترك في النشرة البريدية ليصلك كل جديد!
+              </h2>
+              <p
+                class="text-[20px] text-[var(--black)] leading-[30px] opacity-90"
+              >
+                اشترك في النشرة البريدية ليصلك كل جديد!
+              </p>
+            </div>
           </div>
-          <form class="flex items-center gap-[22px]">
+          <form class="newsletter__form flex items-center gap-[22px]">
             <input
               type="email"
               placeholder="أدخل بريدك الإلكتروني"
@@ -2601,27 +2619,34 @@
             </button>
           </form>
         </div>
-
       </div>
       <!-- Bottom Section -->
-       <div class="pt-[27px] pb-[23px] mt-[47px] border-t border-t-[#FFFFFF52]">
-         <div class="global__container mx-auto flex justify-between items-center">
-           <div class="flex items-center gap-2">
-             <img src="assets/media/svg/footer/tax.svg" alt="tax"/>
+      <div
+        class="bottom__nav pt-[27px] pb-[23px] mt-[47px] border-t border-t-[#FFFFFF52]"
+      >
+        <div
+          class="global__container mx-auto flex justify-between items-center"
+        >
+          <div class="tax__number flex items-center gap-2">
+            <img src="assets/media/svg/footer/tax.svg" alt="tax" />
 
             <p class="text-[var(--white)] text-[16px]">
-              الرقم الضريبي : 546987552  
+              الرقم الضريبي : <br class="divider hidden" />
+              546987552
             </p>
           </div>
-           <p class="text-[var(--white)] text-[20px] leading-[28px]">جميع الحقوق محفوظة لدى جلمير</p>
-           <div class="flex gap-2">
-             <img src="assets/media/svg/footer/visa.svg" alt="Visa" />
-             <img src="assets/media/svg/footer/master.svg" alt="MasterCard"/>
-             <img src="assets/media/svg/footer/paypal.svg" alt="PayPal" />
-             <img src="assets/media/svg/footer/mada.svg" alt="mada" />
-           </div>
-         </div>
-       </div>
+
+          <p class="copyright text-[var(--white)] text-[20px] leading-[28px]">
+            جميع الحقوق محفوظة لدى جلمير
+          </p>
+          <div class="payment__methods flex gap-2">
+            <img src="assets/media/svg/footer/visa.svg" alt="Visa" />
+            <img src="assets/media/svg/footer/master.svg" alt="MasterCard" />
+            <img src="assets/media/svg/footer/paypal.svg" alt="PayPal" />
+            <img src="assets/media/svg/footer/mada.svg" alt="mada" />
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="scripts/main.js" defer></script>
   </body>

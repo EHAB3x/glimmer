@@ -24,13 +24,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .banners__section {
     padding: 24px 0;
     margin-top: 14px;
-  }
-  .banners__track .banners__track {
-    animation: marquee-scroll 20s linear infinite;
   }
   .banners__section img {
     aspect-ratio: 8 / 1;
@@ -39,7 +36,7 @@
   .banners__section .banners__track {
     display: flex;
     width: fit-content;
-    animation: marquee-scroll 10s linear infinite;
+    animation: marquee-scroll 20s linear infinite;
     gap: 46px;
   }
 

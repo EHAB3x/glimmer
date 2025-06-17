@@ -91,7 +91,7 @@
   transition: 0.3s linear;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .product__section {
     padding: 40px 0;
   }
@@ -169,7 +169,7 @@
 .images__text img {
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .images__text {
     margin: 0 4px;
     margin-top: 40px;

@@ -33,7 +33,7 @@
   z-index: 9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .offers__section {
     padding: 32px 0 54px 0;
   }
@@ -107,7 +107,7 @@
 .offers__section .offer__card.fade-in img {
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .offers__section .best__offer {
     flex: unset;
   }
@@ -212,7 +212,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .offers__section .offer__time {
     min-height: 310px;
     padding-bottom: 20px;

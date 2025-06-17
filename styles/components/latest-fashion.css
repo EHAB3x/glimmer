@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .latest__fashion {
     flex-direction: column;
     padding: 0;
@@ -40,7 +40,7 @@
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .latest__fashion .article__container {
     gap: 21px;
     &::-webkit-scrollbar {
